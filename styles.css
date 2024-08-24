@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Inter", sans-serif; */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    width: 442px;
+    height: 581px;
+    position: relative;
+    top: 77px;
+    left: 180px;
+    /* justify-content: space-evenly; */
+    border: 1px solid #ccc;
+    /* align-items: normal; */
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    width: 153px;
+    height: 26px;
+    left: calc(50% - 153px/2 - 0.5px);
+    top: 28px;
+    height: 26px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.0761px;
+    line-height: 26px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #FF6B82;
+
+}
+
+.box {
+    border-radius: 12px;
+    position: relative;
+    width: 342px;
+    height: 74px;
+    left: 50px;
+    box-shadow: 0px 0px 4px 0px #A7A7A740;
+}
+
+#box1 {
+
+    top: 48px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+}
+
+
+#box2 {
+
+    top: 68px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+}
+
+#box3 {
+
+    top: 88px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+
+}
+
+
+.discount-value {
+    position: absolute;
+    width: 70px;
+    height: 74px;
+    top: 0px;
+    left: 0px;
+    gap: 0px;
+    border-radius: 12px 0 0 12px;
+    background: #FF6B82;
+    overflow: visible;
+
+}
+
+.discount-value::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+
+    background: url('Vector\ 537.svg') repeat-y;
+    background-size: 31.5%;
+    z-index: 1;
+    clip-path: inset(4% 0% 4% 0%);
+    transform: scaleY(1.02);
+}
+
+.discount-value-text {
+    width: 35px;
+    height: 38px;
+    margin: 18px 17px 18px 18px;
+    top: 92px;
+    left: 68px;
+}
+
+.discount-value-text-value-1 {
+
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16.35px;
+    text-align: center;
+}
+
+.discount-value-text-value-2 {
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.radio-input {
+    position: absolute;
+    width: 14.46px;
+    height: 14.46px;
+    top: 30px;
+    left: 84px;
+    border: 0.9px 0px 0px 0px;
+}
+
+
+
+
+.right-side-text-1 {
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4608px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #000000;
+
+}
+
+.right-side-text-2 {
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.4608px;
+    line-height: 18px;
+    color: #000000;
+}
+
+
+
+.right-side-text-3 {
+    position: absolute;
+    width: 90px;
+    height: 17px;
+    top: 12px;
+    left: 115.77px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+    color: #FF6B82;
+}
+
+.right-side-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+
+    position: absolute;
+    width: 85px;
+    height: 42px;
+    left: 116.23px;
+    top: 18px;
+}
+
+.expanded-box {
+    position: relative;
+    width: 342px;
+    height: 172px;
+
+    left: 50px;
+    gap: 0px;
+    border-radius: 12px;
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 4px rgba(167, 167, 167, 0.25);
+
+
+    border: 1px solid #FF6B82;
+    background: #FFF9FA;
+
+}
+
+#expanded-box1 {
+    top: 48px;
+}
+
+#expanded-box2 {
+    top: 68px;
+}
+
+#expanded-box3 {
+    top: 88px;
+}
+
+
+
+
+.radio-button-checked {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url('radio-button.png');
+    background-size: cover;
+    /* Ensures the image covers the entire box */
+    /* Centers the image in the box */
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 22.8px;
+    cursor: pointer;
+    /* Prevents the image from repeating */
+}
+
+.radio-input-ex {
+    position: absolute;
+    width: 14.46px;
+    height: 14.46px;
+    top: 30.33px;
+    left: 22.69px;
+    border: 0.9px 0px 0px 0px;
+}
+
+.radio-input-ex object {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* Ensures no extra space around the object */
+}
+
+.radio-input-ex-in {
+    width: 10.04px;
+    height: 9.04px;
+    position: absolute;
+    top: 33px;
+    left: 24.8px;
+}
+
+.ex-text {
+    position: absolute;
+}
+
+#ex-text-box-1 {
+    width: 81px;
+    height: 18px;
+    top: 20px;
+    left: 55px;
+
+    font-size: 14.46px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: left;
+    color: #000000;
+}
+
+#ex-text-box-2 {
+    width: 85px;
+    height: 18px;
+    top: 39.77px;
+    left: 55.23px;
+    font-size: 14.46px;
+    font-weight: 600;
+    line-height: 17.5px;
+    text-align: left;
+    color: #000000;
+
+}
+
+#ex-text-box-3 {
+    width: auto 52px;
+    height: auto 17px;
+    top: 20.12px;
+    left: 141.77px;
+    padding: 1px 4px 1px 4px;
+    gap: 10px;
+    border-radius: 2px;
+    background: #FF6B82;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+#ex-text-box-4 {
+    width: 56px;
+    height: 12px;
+    top: 43.38px;
+    left: 143px;
+    opacity: 42%;
+    font-size: 9.94px;
+    font-weight: 400;
+    line-height: 12.03px;
+    text-align: left;
+    text-decoration: line-through;
+}
+
+#ex-text-box-5 {
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    left: 55.23px;
+    top: 65.07px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.94183px;
+    line-height: 12px;
+    color: #000000;
+}
+
+#ex-text-box-6 {
+
+    position: absolute;
+    width: 31px;
+    height: 12px;
+    left: 128.44px;
+    top: 65.07px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.94183px;
+    line-height: 12px;
+    color: #000000;
+}
+
+#ex-text-box-7 {
+
+
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    left: 38.06px;
+    top: 94px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.03803px;
+    line-height: 11px;
+
+
+    color: #000000;
+
+
+}
+
+#ex-text-box-8 {
+    /* #2 */
+
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    left: 37.15px;
+    top: 126.53px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.03803px;
+    line-height: 11px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+}
+
+.dropdown-container-1 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 65.98px;
+    height: 25.31px;
+    left: 55.23px;
+    top: 84.05px;
+
+    background: #FFFFFF;
+    border: 0.903803px solid #D9D9D9;
+    border-radius: 1.80761px;
+
+}
+
+
+
+.dropdown-container-4 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 72.3px;
+    height: 25.31px;
+    left: 128.44px;
+    top: 116.59px;
+
+    background: #FFFFFF;
+    border: 0.903803px solid #D9D9D9;
+    border-radius: 1.80761px;
+
+}
+
+.dropdown-container-2 {
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 65.98px;
+    height: 25.31px;
+    left: 55.23px;
+    top: 116.59px;
+
+    background: #FFFFFF;
+    border: 0.903803px solid #D9D9D9;
+    border-radius: 1.80761px;
+
+
+}
+
+.dropdown-container-3 {
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 72.3px;
+    height: 25.31px;
+    left: 128.44px;
+    top: 84.05px;
+
+    background: #FFFFFF;
+    border: 0.903803px solid #D9D9D9;
+    border-radius: 1.80761px;
+
+
+
+}
+
+.styled-dropdown {
+    width: 100%;
+    height: 100%;
+    padding-left: 7.23px;
+    border: none;
+    border-radius: 1.80761px;
+    font-size: 10.85px;
+    /* Font size */
+    line-height: 13.13px;
+    font-weight: 400;
+    appearance: none;
+    /* Remove default dropdown arrow */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    cursor: pointer;
+    position: relative;
+}
+
+.styled-dropdown::after {
+    /* Polygon 31 */
+    content: ▼;
+    position: absolute;
+    width: 5.42px;
+    height: 5.42px;
+    left: 58.74px;
+    top: 15.37px;
+
+    background: #000000;
+    transform: rotate(-180deg);
+}
+
+
+.free-delivery {
+    /* Free Delivery */
+
+    position: relative;
+    width: 89px;
+    height: 17px;
+    left: 48px;
+    top: 106px;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+    color: #FF6B82;
+    ;
+
+
+}
+
+.total {
+
+
+    position: relative;
+    width: 124px;
+    height: 17px;
+    left: 175px;
+    top: 106px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-to-cart {
+
+    /* Frame 628527 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+
+    position: relative;
+    width: 342px;
+    height: 40px;
+    left: calc(50% - 342px/2);
+    top: 126px;
+
+    background: #FF6B82;
+    border-radius: 4px;
+
+
+}
+
+.add-to-cart-text {
+    /* Add to Cart */
+    position: absolute;
+    width: 68px;
+    height: 15px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    left: 149px;
+    top: 12.5px;
+    color: #FFFFFF;
+
+
+    line-height: 14.52px;
+    text-align: left;
+
+
+}
+
+.plus {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 125px;
+    top: 12px;
+}
+
+.polygon32 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -0.63px;
+    left: 51.74px;
+    z-index: 1;
+}
+
+.polygon32-1 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -0.63px;
+    left: 57.74px;
+    z-index: 1;
+}
+
+.powered {
+    position: relative;
+    width: 135px;
+    height: 17px;
+    top: 133px;
+    left: 153px;
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+    color: #D4D4D4;
+
+}
+
+.pumper {
+    color: #FF2C31;
+}
+
+.collapsed {
+    height: 0;
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
